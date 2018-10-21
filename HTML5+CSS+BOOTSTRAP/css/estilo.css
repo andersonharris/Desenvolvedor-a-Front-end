@@ -1,0 +1,171 @@
+*{
+    margin:0px;
+    font-size: 20px;
+    font-family: 'Charmonman', cursive;
+    padding: 0;
+
+}/* cabecalho */
+.cabecalho{
+    
+    width: 100%;
+    height: 300px;
+    
+}
+.figura-header{
+    
+    width: 300px;
+    float: left;
+    
+}
+#divBusca{
+  margin: 100px;
+  background-color:#E0EEEE;
+  border:solid 2px chartreuse;
+  border-radius:10px;
+  float: right;
+  
+}
+#txtBusca{
+  background-color:transparent;
+  padding-left:5px; 
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:191px;
+}
+#btnBusca{
+  border:none;
+  float: right;
+  height:32px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:chartreuse;
+}
+/*navegacao*/
+.navegacao{
+    
+    width: 100%; 
+    height: auto;
+    background-color:black;
+    opacity: 0.9;
+
+
+}
+.navegacao ul{
+    
+    list-style:none;
+    text-align: center;
+}
+.navegacao li {
+
+    display: inline;
+    margin-left: 20px;
+    
+
+}
+.navegacao li a{
+   
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.navegacao li a:hover{
+    color: chartreuse;
+    transition-duration: 0.7s;
+    font-weight: bold;
+    
+}
+/*Principal*/
+.principal{
+    width: 100%;
+    
+}
+.comidas-italianas{
+    
+    padding: 50px;
+    background-color:chartreuse;
+    opacity: 0.9;
+    color: white;
+}
+.principal h1,h2{
+    
+    padding: 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 50px;
+    
+    
+}
+.principal p {
+    
+    text-align: justify;
+    padding: 10px;
+    
+}
+.principal img{
+    
+    border-radius: 5px;
+}
+.imagem1{
+    
+    float: right;
+    margin-top: 110px;
+    padding: 15px;
+}
+.imagem2{
+    float: left;
+    padding: 15px;
+    
+}
+.sobremesa{
+    
+    padding: 50px;
+    background-color:red;
+    opacity: 0.9;
+    color: white;
+    
+}
+.sobremesa1 {
+    
+    float: right;
+    padding-left:15px;
+    border-radius: 10px;
+    
+    
+}
+.restaurantes{
+     float: right;
+    
+
+}
+.restaurante{
+    
+    padding: 50px;
+    background-color:chartreuse;
+    opacity: 0.9;
+    color: white;
+    
+}
+.restaurantes{
+    
+    padding-left: 15px;
+}
+.restaurantes1{
+    
+    float: left;
+    padding: 10px 15px;
+}
+figure { 
+    display: block;
+    margin-top: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+          
+            
+           
+            

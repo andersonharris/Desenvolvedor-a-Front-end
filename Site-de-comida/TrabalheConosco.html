@@ -1,0 +1,189 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!--Bootstrap css-->
+        <link rel="stylesheet" type="text/css" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
+        
+        <!--Font asewone-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        
+        <!--Font Google -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <title>Trabalhe Conosco</title>
+    </head>
+    <style>
+            
+            body{font-family: 'Arial','Helvetica',@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');}
+            .nav-link:hover{background-color: #17a2b8; border-radius: 5px;}
+            .navbar{background-image: linear-gradient(#1a1a7e, #17a2b8);}
+            .dropdown-item:hover{background-color: #17a2b8;}
+            .dropdown:hover>.dropdown-menu {display: block;}
+            .footer-copyright{ background-image: linear-gradient(#1a1a7e, #17a2b8);}
+        
+        
+        form h1{font-family: 'Arial','Helvetica',sans-serif;}
+         
+     </style>
+    <body>
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand text-white" href="index.html">Comidas Brasilamérica</a>
+              <button class="navbar-toggler text-info" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+              </button>
+            
+              <div class="collapse navbar-collapse text-center font-weight-bold" id="navbarNavDropdown">
+                <ul class="navbar-nav tex-info"> 
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="fotos.html">Fotos</a>  
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="marmitex.html">Marmitex</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu">
+                     Mais informações
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item text-info" href="contato.html" target="_self">Reclame aqui</a>
+                      
+                      <a class="dropdown-item text-info" href="franquias.html">Franquias</a>
+                      
+                      <a class="dropdown-item text-info" href="localizacao.html">Localização</a>
+                    
+                      <a class="dropdown-item text-info"  href="TrabalheConosco.html">Trabalhe conosco</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+         </nav>
+            
+        <!--fim navbar-->
+        <div class="container shadow">
+            <form>
+                <h1 class="text-center mt-5 text-info">Trabalhe Conosco</h1>
+                <div class="form-row mt-5">
+                    <div class="form-group col-lg-6">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-7">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="aaaaaaa@gmail.com">
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" placeholder="(##)#####-####">
+                    </div>
+                    <div class="form-group col-lg-2">
+                        <label for="idade">Idade</label>
+                        <input type="date" class="form-control" id="idade">
+                    
+                    </div>
+                    
+                </div>
+                <div class="form-row">
+                   <div class="form-group col-lg-3">
+                        <label for="nacionalidade">Nacionalidade</label>   
+                       <input type="text" id="nacionalidade" class="form-control" placeholder="Digite sua nacionalidade">
+                    
+                   </div>
+                    <div class="form-group col-lg-3">
+                        <label for="estado">Estado</label>
+                        <input  type="text" class="form-control" id="estado" placeholder="Ex.: São Paulo">
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" class="form-control" placeholder="Ex.: Santos">
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <label for="Sexo">Sexo</label>
+                        <div class="form-check ">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label mr-5" for="gridRadios1">
+                                    Masculino
+                                
+                                </label>
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Feminino
+                                </label>
+                         </div>
+                     </div>
+                </div>
+                <form>
+                  <div class="form-group col-lg-6 mt-5">
+                    <label for="exampleFormControlFile1">Curriculo</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                    <div class="form-group">
+                         <button class="btn btn-outline-success mb-5 mt-5 btn-lg" id="botaoEnviar" type="submit">Enviar</button>
+                         <button class="btn btn-outline-info mb-5 mt-5 btn-lg" id="botaoExcluir" type="submit">Voltar</button>
+                    </div>
+                </form>
+            </form>
+        </div>
+        
+        
+        
+        
+      
+         <!-- Footer -->
+        
+        <footer class="page-footer">
+
+                <!-- Footer Text -->
+                <div class="container-fluid text-center text-md-left" style="background-color: #e3e3e3">
+
+                  <!-- Grid row -->
+                  <div class="row">
+
+                    <!-- Grid column -->
+                    
+                    <div class="col-12 col-md-12 mt-3 text-center">
+
+                      <!-- Content -->
+                        <blockquote class="blockquote">
+                          <p class="mb-0">A satisfação está no esforço e não apenas na realização final.</p>
+                          <footer class="blockquote-footer">Famosa frase de <cite title="Source Title">Mahatma Ghandi</cite></footer>
+                        </blockquote>
+
+                    </div>
+                  </div>
+                  <!-- Grid row -->
+
+                </div>
+                <!-- Footer Text -->
+
+                <!-- Copyright -->
+            
+                <div class="footer-copyright text-center py-3 bg-dark text-white">© Anderson R. dos Santos
+                  <a href="https://www.linkedin.com/in/anderson-rodrigues-dos-santos-7409b0129/">Linkedin</a>
+                </div>
+                <!-- Copyright -->
+
+    </footer>
+  <!-- Footer -->
+        
+        
+         <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="bootstrap-4.2.1-dist/js/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap-4.2.1-dist/js/popper.min.js"></script>
+        <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+        <script>
+            
+                
+        
+        </script>
+        
+    </body>
+</html>

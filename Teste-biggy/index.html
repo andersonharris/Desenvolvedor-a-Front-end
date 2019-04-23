@@ -1,0 +1,162 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Lanterna</title>
+        
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        
+        
+        
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-center">
+            
+                <img src="img/lanterna-apagada.png" class="img-fluid" id="lant">
+                <p id="text">Desligada - 100%</p>
+                
+                
+            </div>
+            <div class="col-lg-6 ml-auto col-md-6 col-sm-6 col-6 mt-5 p-5 text-center">
+                <button class="btn btn-success" type="button" id="botao">Ligar</button>
+                <button class="btn btn-danger" type="button" id="botao-desligar">Desligar</button>
+                <button class="btn btn-primary my-3" type="button" id="trocar-bateria">Trocar bateria</button>
+            
+            
+            </div>
+                
+         </div>   
+        
+        </div>
+        
+        
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="bootstrap-4.3.1-dist/js/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap-4.3.1-dist/js/popper.min.js"></script>
+        <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    </body>
+
+    
+    
+    
+    <script>
+        
+        
+        
+        $(document).ready(function(){
+            $('#botao').on("click",ligar);
+            $('#botao-desligar').on("click", desligar);
+            $('#trocar-bateria').on("click", trocarBateria);
+            
+
+               
+        });
+        
+       function trocarBateria(){
+           
+           let porcentagem1 = 100;
+            let texto = document.getElementById('text').innerHTML = "Ligada - "+porcentagem1+" %";
+            let imagem = document.getElementById('lant').src;
+            let imagem_ligado = 'img/lanterna-acessa.png';
+            let imagem_desligado = 'img/lanterna-apagada.png';
+           
+           if(imagem == imagem_desligado){
+               
+               
+               (document.getElementById('text').innerHTML = "Ligada - "+porcentagem1+" %");
+                document.getElementById('lant').src = imagem_ligado;
+               
+            }else{
+                
+                (document.getElementById('text').innerHTML = "Desligada - "+porcentagem1+" %");
+               // document.getElementById('lant').src = imagem_desligado;
+                
+                
+            }
+           
+           
+       }
+        
+       
+       
+        function ligar(){
+            let porcentagem = 100;
+            let texto = document.getElementById('text').innerHTML = "Ligada - "+porcentagem+" %";
+            let imagem = document.getElementById('lant').src;
+            let imagem_ligado = 'img/lanterna-acessa.png';
+            let imagem_desligado = 'img/lanterna-apagada.png';
+            
+            
+            
+
+            if(imagem == imagem_desligado){
+                
+                document.getElementById('lant').src = imagem_desligado;
+                document.getElementById('text').innerHTML = "Ligada";
+                
+                
+            }else{
+                document.getElementById('lant').src = imagem_ligado;
+            }
+            
+            
+             function mudarValor(){
+               
+                if(porcentagem != 0){
+                    
+                    
+                    porcentagem = (porcentagem - 1);
+                    (document.getElementById('text').innerHTML = "Ligada - "+porcentagem+" %");
+                    
+                    
+                }else{
+                    (document.getElementById('text').innerHTML = "Desligada - "+porcentagem+" %");
+                    document.getElementById('lant').src = imagem_desligado;
+                    
+                    
+               
+                }
+                 
+                 
+                  
+            }
+            
+            
+          setInterval(mudarValor,100);
+          
+        
+        }
+        
+        
+        
+        function desligar(){
+            
+            let porcentagem = 100;
+            let texto =  document.getElementById('text').innerHTML = "Desligado - "+porcentagem+" %";
+            let imagem = document.getElementById('lant').src;
+            let imagem_ligado = 'img/lanterna-acessa.png';
+            let imagem_desligado = 'img/lanterna-apagada.png';
+
+            if(imagem == imagem_ligado){
+                 document.getElementById('lant').src = imagem_ligado;
+                 document.getElementById('text').innerHTML = "Desligado";
+                
+            }else{
+                document.getElementById('lant').src = imagem_desligado;
+            }
+            
+        }
+        
+    
+        
+        
+    
+    </script>
+</html>

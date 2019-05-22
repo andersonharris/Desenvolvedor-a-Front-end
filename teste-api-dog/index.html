@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+      
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      
+    <!-- 5 Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Raleway|Roboto+Mono&display=swap" rel="stylesheet">
+
+
+    <title>APi-Dog</title>
+      <style>
+          *{font-family: 'Roboto', sans-serif;}
+          
+         
+          
+          
+        
+            
+      
+      </style>
+  </head>
+  <body>
+    <div class="container">
+       <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 form-group mx-auto my-5 py-5 bg-light rounded">
+                    <div class="form-group">
+                        <label for="nomeCachorro">Nome do cachorro</label>
+                        <input class="form-control" required name="cor">
+                    </div>
+                    <div class="form-group">
+                                            
+                        <label>Raças</label>
+                        <select id="racas" class="form-control" class="dog-selector">
+                        <option>Selecionar Raças</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        
+                         <form action="index.html" method="post" name="status_evento" >
+                    		  <label>Cores</label>
+                              <select name="status" onchange="muda_cor(this.value);" class="form-control">
+                                 <option selected style="background-color: white">Selecione uma cor</option> 
+			                     <option value="yellow" style="background-color: #e8e81f;" ></option>
+			                     <option value="red" style="background-color:#CC0035;" ></option>
+			                     <option value="blue" style="background-color:#1010ef;" ></option>
+                                 <option value="green" style="background-color:#078b07;" ></option>
+                                 <option value="purple" style="background-color:#8e0b8e;" ></option>
+                             </select>
+                        </form>
+                    
+                    </div>
+                   
+                    <div class="form-group">
+                        
+                    <form action="index.html" method="post" name="status_font">     
+                        <label>Fontes</label>
+                        <select class="form-control" onchange="muda_fonte(this.value);" name="fontes">
+                            <option selected>Seleciona a fonte</option>
+                            <option value="Montserrat" style="font-family: 'Montserrat', sans-serif;">Monteserrat</option>
+                            <option value="Lato" style="font-family: 'Lato', sans-serif;">Lato</option>
+                            <option value="Open-Sans" style="font-family: 'Open Sans', sans-serif;">OpenSans</option>
+                            <option value="Raleway" style="font-family: 'Raleway', sans-serif;">Raleway</option>
+                            <option value="Roboto-Mono" style="font-family: 'Roboto Mono', monospace;">Roboto Mono</option>
+                        </select>
+                     </form>
+                    </div>
+                   
+
+                    
+                    <div class="form-group">
+                    
+                        <button class="btn btn-success shadow btn-block rounded-pill mt-5" type="submit" id="getDog">Enviar</button>
+                    
+                    </div>
+
+                </div>
+           
+                <div class=" col-lg-6 col-md-6">
+               
+                    <div class="image-content">
+                        
+                    
+                    
+                    </div>
+                   
+                    
+                
+                </div>
+                
+            </div>
+
+            
+</div>
+        
+        
+      
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="Controller/UserController.js"></script>
+      
+      
+      
+      <script>
+          
+          
+          
+          
+         
+          
+          
+       
+        
+      
+      </script>
+  </body>
+</html>
